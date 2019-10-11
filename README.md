@@ -23,10 +23,20 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+    - Allows the storage of data into a context object that can be accessed by all components to eliminate prop drilling
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+    - Actions are functions that describe the type of action and payload that will be taken into the reducer. Reducers take in the action function and update the state to the store. The store hold the current state and is called upon to display it. The store is immutable, updating the state updates a copy of the state, not the previous iteration.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+    - Application state is state accessible by the whole application whereas component state is only accessible by a given component. If you need to access certain data throughout the application then application state is more beneficial but if only one component needs access then component state would work fine.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+    - Thunk is middleware for redux that enables asynchronous actions. Thunk allows us to create asynchronous action-creators that can consume data to store to the store
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+    - I am a fan of redux because it allows for the storage of state that is accessible throughout an application. It is difficult to understand at first, but with more practice should become a stable in many of my projects going forward.
+
 
 ## Project Set Up
 
