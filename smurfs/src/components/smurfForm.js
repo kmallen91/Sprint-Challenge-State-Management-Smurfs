@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { addSmurf } from '../actions'
 
 const SmurfForm = () => {
-    const [smurfs, setSmurf] = useState()
+    const [smurfs, setSmurf] = useState({})
     const handleChanges = e => { 
         const value = e.target.value              
         setSmurf({...smurfs, [e.target.name]: value});
